@@ -30,6 +30,8 @@
         var phoneNo = document.getElementById("phoneNo")
         phoneNo.onclick = () => {
             navigator.clipboard.writeText("0544112969")
+            phoneNo.innerHTML = "<span class='phoneNo-new-text'>Phone number copied</span>"
+            setTimeout(() => phoneNo.innerHTML = 'Phone number: <span class="phoneNo-span">+966 544 112 969</span>', 2000)
         }
     </script>
 
