@@ -14,14 +14,16 @@
         <div class="line"></div>
         <div class="informatio-container">
             <div id="phoneNo" class="information-buttons phoneNo">
-                Phone number: <span class="phoneNo-span">+966 544 112 969</span>
+                Phone number: <span class="phoneNo-span">+966 54 411 2969</span>
             </div>
             <a href="https://wa.me/qr/ZBYRBE3X2ZY2L1" target="_blank" class="information-buttons whatsapp">
                 Whatsapp
             </a>
-            <a href="https://linkedin.com/in/ahmad-hassan-3a37b425b" target="_blank"
-                class="information-buttons linkedIn">
+            <a href="https://linkedin.com/in/ahmad-hassan-3a37b425b" target="_blank" class="information-buttons linkedIn">
                 LinkedIn
+            </a>
+            <a href="https://github.com/hamdolly" target="_blank" class="information-buttons github">
+                GitHub
             </a>
         </div>
     </section>
@@ -29,7 +31,7 @@
     <script>
         var phoneNo = document.getElementById("phoneNo")
         phoneNo.onclick = () => {
-            navigator.clipboard.writeText("0544112969")
+            navigator.clipboard.writeText("+966544112969")
             phoneNo.innerHTML = "<span class='phoneNo-new-text'>Phone number copied</span>"
             setTimeout(() => phoneNo.innerHTML = 'Phone number: <span class="phoneNo-span">+966 544 112 969</span>', 2000)
         }
